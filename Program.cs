@@ -1,4 +1,8 @@
-﻿using System;
+﻿// See https://aka.ms/new-console-template for more information
+// Frances S. Mosqueda
+// BSCS 3-2
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,10 +14,6 @@ namespace Act1
     {
         static void Main(string[] args)
         {
-            // See https://aka.ms/new-console-template for more information
-            // Frances S. Mosqueda
-            // BSCS 3-2
-
             Console.WriteLine("WELCOME TO GRADE CALCULATOR!");
 
             bool continueEntering = true;
@@ -56,6 +56,27 @@ namespace Act1
 
                 // Print the corresponding letter grade
                 Console.WriteLine($"The letter grade is: {grade}");
+
+                //Feedback based on the grade
+                Console.WriteLine();
+                switch(grade)
+                {
+                    case 'A':
+                        Console.WriteLine("Excellent work!");
+                        break;
+                    case 'B':
+                        Console.WriteLine("Good job!");
+                        break;
+                    case 'C':
+                        Console.WriteLine("You passed.");
+                        break;
+                    case 'D':
+                        Console.WriteLine("You need to improve.");
+                        break;
+                    case 'F':
+                        Console.WriteLine("Your grades are failed, but i know you can still improve just don't give up.");
+                        break;
+                }
                 Console.WriteLine();
 
                 // Ask the user if they want to enter another grade
